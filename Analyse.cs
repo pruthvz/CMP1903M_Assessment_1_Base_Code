@@ -30,18 +30,19 @@ namespace CMP1903M_Assessment_1_Base_Code
             //5. Number of lower case letters
             List<int> values = new List<int>();
             //Initialise all the values in the list to '0'
-            for(int i = 0; i<5; i++)
+            for(int i = 0; i<6; i++)
             {
                 values.Add(0);
             }
 
             // string characters
             int length = input.Length;
-            Console.WriteLine("The sentence has : " + length + " characters.");
+            values[0] = length;
+
 
             // number of words in the sentence
             string[] words = input.Split(" ");
-            Console.WriteLine("Count of words: " + words.Length); 
+            // Console.WriteLine("Count of words: " + words.Length); 
 
             // find number of sentence
             for (int i = 0; i < input.Length; i++)
@@ -51,8 +52,8 @@ namespace CMP1903M_Assessment_1_Base_Code
                     numOfSentences++;
                 }
             }
-            Console.WriteLine("Number of sentences: " + numOfSentences);
-            values[0] = numOfSentences;
+            // Console.WriteLine("Number of sentences: " + numOfSentences);
+            values[1] = numOfSentences;
 
             
             // find number of vowels in sentence;
@@ -66,8 +67,8 @@ namespace CMP1903M_Assessment_1_Base_Code
                 }
             }
 
-            Console.WriteLine("Vowels count: " + vowelsTotal);
-            values[1] = vowelsTotal;
+            // Console.WriteLine("Vowels count: " + vowelsTotal);
+            values[2] = vowelsTotal;
 
             // find number of constant in sentence;
             for (int i = 0; i < input.Length; i++)
@@ -77,8 +78,8 @@ namespace CMP1903M_Assessment_1_Base_Code
 
             constantTotal = constantTotal - vowelsTotal;
 
-            Console.WriteLine("Constant count: " + constantTotal);
-            values[2] = constantTotal;
+            // Console.WriteLine("Constant count: " + constantTotal);
+            values[3] = constantTotal;
 
             // find number of uppercase case;
             int counter = 0;
@@ -90,8 +91,8 @@ namespace CMP1903M_Assessment_1_Base_Code
                     counter++;
                 }
             }
-            Console.WriteLine("The sentence has " + counter + " uppercases.");
-            values[3] = counter;
+            // Console.WriteLine("The sentence has " + counter + " uppercases.");
+            values[4] = counter;
 
             // find number of lowercase;
 
@@ -101,8 +102,8 @@ namespace CMP1903M_Assessment_1_Base_Code
             }
 
             numOfLowercase = numOfLowercase - counter;
-            Console.WriteLine("Lowercase count: " + numOfLowercase);
-            values[4] = numOfLowercase;
+            // Console.WriteLine("Lowercase count: " + numOfLowercase);
+            values[5] = numOfLowercase;
 
             return values;
         }
