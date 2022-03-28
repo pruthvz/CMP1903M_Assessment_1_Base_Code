@@ -21,13 +21,13 @@ namespace CMP1903M_Assessment_1_Base_Code
         public static string manualTextInput()
         {            
             string text;
-            Console.WriteLine("Enter a sentence : ");
+            Console.Write("Enter sentences ending with * >> ");
             text = Console.ReadLine();
 
             while (string.IsNullOrEmpty(text))
                 {
                     Console.WriteLine("Can't be empty!");
-                    Console.Write("Enter sentences ending with * : ");
+                    Console.Write("Enter sentences ending with * >> ");
                     text = Console.ReadLine();
                 }
             return text;
