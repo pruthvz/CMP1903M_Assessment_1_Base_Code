@@ -1,0 +1,11 @@
+D:\aProgrammingFile\Uni-code\CMP1903M Assessment 1 Base Code\bin\Debug\netcoreapp2.1\CMP1903M Assessment 1 Base Code.deps.json
+D:\aProgrammingFile\Uni-code\CMP1903M Assessment 1 Base Code\bin\Debug\netcoreapp2.1\CMP1903M Assessment 1 Base Code.runtimeconfig.json
+D:\aProgrammingFile\Uni-code\CMP1903M Assessment 1 Base Code\bin\Debug\netcoreapp2.1\CMP1903M Assessment 1 Base Code.runtimeconfig.dev.json
+D:\aProgrammingFile\Uni-code\CMP1903M Assessment 1 Base Code\bin\Debug\netcoreapp2.1\CMP1903M Assessment 1 Base Code.dll
+D:\aProgrammingFile\Uni-code\CMP1903M Assessment 1 Base Code\bin\Debug\netcoreapp2.1\CMP1903M Assessment 1 Base Code.pdb
+D:\aProgrammingFile\Uni-code\CMP1903M Assessment 1 Base Code\obj\Debug\netcoreapp2.1\CMP1903M Assessment 1 Base Code.csprojAssemblyReference.cache
+D:\aProgrammingFile\Uni-code\CMP1903M Assessment 1 Base Code\obj\Debug\netcoreapp2.1\CMP1903M Assessment 1 Base Code.csproj.CoreCompileInputs.cache
+D:\aProgrammingFile\Uni-code\CMP1903M Assessment 1 Base Code\obj\Debug\netcoreapp2.1\CMP1903M Assessment 1 Base Code.AssemblyInfoInputs.cache
+D:\aProgrammingFile\Uni-code\CMP1903M Assessment 1 Base Code\obj\Debug\netcoreapp2.1\CMP1903M Assessment 1 Base Code.AssemblyInfo.cs
+D:\aProgrammingFile\Uni-code\CMP1903M Assessment 1 Base Code\obj\Debug\netcoreapp2.1\CMP1903M Assessment 1 Base Code.dll
+D:\aProgrammingFile\Uni-code\CMP1903M Assessment 1 Base Code\obj\Debug\netcoreapp2.1\CMP1903M Assessment 1 Base Code.pdb
