@@ -36,11 +36,19 @@ namespace CMP1903M_Assessment_1_Base_Code
 
 
             //TO ADD: Get the frequency of individual letters?
-
+            Console.WriteLine("Frequency of individual letters: "+manualInput);
+            while (manualInput.Length > 0) {
+                Console.Write(manualInput[0] + " = ");
+                int cal = 0;
+                for (int j = 0; j < manualInput.Length; j++) {
+                    if (manualInput[0] == manualInput[j]) {
+                    cal++;
+                    }
+                }
+                Console.WriteLine(cal);
+                manualInput = manualInput.Replace(manualInput[0].ToString(), string.Empty);
+            }
            
         }
-        
-        
-    
     }
 }
