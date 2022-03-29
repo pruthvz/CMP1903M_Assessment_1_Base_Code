@@ -15,15 +15,16 @@ namespace CMP1903M_Assessment_1_Base_Code
 
         
 
-		public static void outputConsole(List<int> values){
+		public static void outputConsole(List<int> values){ // outputConsole, needed a parameter of values to access all the integers to console log to the user.
 
             // foreach(var i in values){
             //     Console.WriteLine(i);
             // }
 
-
+            // I defined a list of all output messages. 
             string[] words = {"Total Number of Characters: ","Sentences: ", "Vowels in sentences: ", "Constants in sentences: ", "Upper case: ", "Lower case: " };
 
+            // using a foreach loop. I was able to place the correct message with the correct value.
             foreach (var tuple in values.Zip(words, (x, y) => (Num: x, Word: y)))
             {
                 Console.WriteLine($"{tuple.Word}: {tuple.Num}");
