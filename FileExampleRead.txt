@@ -1,0 +1,1 @@
+Hello I am testing to see if this file is read by my program in c#.* I can now read file and display the sentence info the the console!*

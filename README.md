@@ -6,6 +6,10 @@
 git clone https://github.com/pruthvz/CMP1903M_Assessment_1_Base_Code.git
 ```
 
+# Read from a text file.
+
+## Add a sentence in FileExampleRead.txt and save it, then run the program and choose the option 2.
+
 # Requirements to run this project.
 
 ## Have .NET Core SDK installed with Version: 2.1.802

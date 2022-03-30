@@ -9,12 +9,11 @@ namespace CMP1903M_Assessment_1_Base_Code
     public class Analyse
     {
         //Handles the analysis of text
-
         //Method: analyseText
         //Arguments: string
         //Returns: list of integers
         //Calculates and returns an analysis of the text
-        public static List<int> analyseText(string input)
+        public  List<int> analyseText(string input)
         {
             // local variables defined.
             int vowelsTotal = 0;
@@ -23,12 +22,7 @@ namespace CMP1903M_Assessment_1_Base_Code
             int numOfLowercase = 0;
             input = input.Replace(" ", String.Empty); // this will remove any whitespaces.
 
-            //List of integers to hold the first five measurements:
-            //1. Number of sentences
-            //2. Number of vowels
-            //3. Number of consonants
-            //4. Number of upper case letters
-            //5. Number of lower case letters
+            //List of integers to hold the first six measurements: since i added an extra value I changed it to six
             List<int> values = new List<int>();
             //Initialise all the values in the list to '0'
             for(int i = 0; i<6; i++)
@@ -53,12 +47,10 @@ namespace CMP1903M_Assessment_1_Base_Code
                     numOfSentences++;
                 }
             }
-            // Console.WriteLine("Number of sentences: " + numOfSentences);
             values[1] = numOfSentences; // pushes the final value to values at index of 1
 
             
             // find number of vowels in sentence;
-            
             // for loop which checks the entire sentences and then an if statement to check if it matches the vowels which are defined.
             for (int i = 0; i < input.Length; i++)
             {
@@ -68,7 +60,6 @@ namespace CMP1903M_Assessment_1_Base_Code
                 }
             }
 
-            // Console.WriteLine("Vowels count: " + vowelsTotal);
             values[2] = vowelsTotal; // pushes vowelsTotal to values at index of 2
 
             // find number of constant in sentence;
@@ -79,7 +70,6 @@ namespace CMP1903M_Assessment_1_Base_Code
 
             constantTotal = constantTotal - vowelsTotal; // removes the constant by vowels which only leaves out all the constants.
 
-            // Console.WriteLine("Constant count: " + constantTotal);
             values[3] = constantTotal; // pushes the constantTotal to values at index of 3
 
             // find number of uppercase case;
@@ -93,18 +83,15 @@ namespace CMP1903M_Assessment_1_Base_Code
                     counter++;
                 }
             }
-            // Console.WriteLine("The sentence has " + counter + " uppercases.");
             values[4] = counter; // pushes the counter value to values at index of 4
 
             // find number of lowercase;
-
             for (int i = 0; i < input.Length; i++) // similar to constants. i run a for loop through all the characters.
             {
                 numOfLowercase++;
             }
 
             numOfLowercase = numOfLowercase - counter; // take away number of lowercase by the number of uppercase we get the final answer of all the lowercases.
-            // Console.WriteLine("Lowercase count: " + numOfLowercase);
             values[5] = numOfLowercase; // pushes the lowercase value to values at index of 5
 
             return values; // returns the list with all the values.
